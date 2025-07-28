@@ -1,134 +1,81 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ballers Blueprint</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header img {
-      height: 100px;
-      margin-bottom: 1rem;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #fff;
-      border-bottom: 1px solid #ccc;
-      padding: 1rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #000;
-      font-weight: 600;
-    }
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    form input, form textarea, form button {
-      width: 100%;
-      padding: 0.75rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    form button {
-      background: #000;
-      color: white;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #eee;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Ballers Blueprint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="your-logo-link.png" alt="Ballers Blueprint Logo">
-    <h1>Ballers Blueprint</h1>
-    <p>Helping Grades 8–12 soccer players find the right post-secondary or professional pathway</p>
-  </header>
-
-  <nav>
-    <a href="#about">About</a>
-    <a href="#resources">Resources</a>
-    <a href="#articles">Articles</a>
-    <a href="#consulting">Consulting</a>
-    <a href="#contact">Contact</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>This platform guides student-athletes in grades 8–12 toward their ideal soccer journey. Whether it’s post-secondary, professional, or international, we provide step-by-step support.</p>
-    </section>
-
-    <section id="resources">
-      <h2>Resources</h2>
-      <ul>
-        <li><a href="#">PDF: How to Contact Coaches</a></li>
-        <li><a href="#">PDF: Choosing the Right League</a></li>
-        <li><a href="#">PDF: Scholarship Guide</a></li>
-      </ul>
-    </section>
-
-    <section id="articles">
-      <h2>Articles</h2>
-      <ul>
-        <li><a href="#">How to Make it Pro in Canada</a></li>
-        <li><a href="#">NCAA vs. U Sports vs. CPL</a></li>
-        <li><a href="#">European Pathways</a></li>
-      </ul>
-    </section>
-
-    <section id="consulting">
-      <h2>1-on-1 Consulting</h2>
-      <p>Book a free call to discuss your goals, pathway options, and how Ballers Blueprint can help you break into the next level.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form action="https://formsubmit.co/kbandks17@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-
-    <section id="faq">
-      <h2>Frequently Asked Questions</h2>
-      <p><strong>Q: Do I need to be on a club team to go pro?</strong><br>A: Not necessarily. What matters is your development and visibility. We help you navigate both.</p>
-      <p><strong>Q: How do I join a European academy?</strong><br>A: Download our European Academy Pathway PDF or book a 1-on-1 for personalized help.</p>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Ballers Blueprint. All rights reserved.
-  </footer>
+    <header>
+        <img src="logo.png" alt="Ballers Blueprint Logo" class="logo">
+        <nav id="navMenu">
+            <button id="menuToggle">☰</button>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#recruitment">Recruitment Resources</a></li>
+                <li><a href="#training">Training Programs</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#programs">Personal Programs</a></li>
+                <li><a href="#knowledge">Knowledge Zone</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="hero.jpg" alt="Soccer Action" class="hero-img">
+            <h1>Helping Grades 8–12 Soccer Players Find the Right Pathway</h1>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to Ballers Blueprint. I’m here to help guide student-athletes on their journey to college and pro soccer.</p>
+        </section>
+        <section id="recruitment">
+            <h2>Recruitment Resources</h2>
+            <ul>
+                <li><a href="usports.pdf" target="_blank">USports Canada Guide</a></li>
+                <li><a href="ncaa.pdf" target="_blank">NCAA Soccer Pathway</a></li>
+            </ul>
+        </section>
+        <section id="training">
+            <h2>Training Programs</h2>
+            <p>Coming Soon: Strength, Technical, and Tactical guides.</p>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>“This platform helped me find the right school and scholarship!” — A real baller</p>
+        </section>
+        <section id="partners">
+            <h2>Partners</h2>
+            <p>We’re proud to collaborate with coaches, clubs, and education platforms.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="https://formsubmit.co/youremail@example.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="programs">
+            <h2>Personal Programs</h2>
+            <p>Schedule a private mentorship call or get a tailored plan. Coming soon.</p>
+        </section>
+        <section id="knowledge">
+            <h2>Knowledge Zone (Beta)</h2>
+            <p><em>Reddit-style commenting is coming soon!</em></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ballers Blueprint</p>
+        <p>
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://tiktok.com" target="_blank">TikTok</a>
+        </p>
+    </footer>
 </body>
 </html>
